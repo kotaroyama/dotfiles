@@ -113,3 +113,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Vim bindings
 bindkey -v
+
+# Pyenv
+eval "$(pyenv init -)"

@@ -27,9 +27,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-
 " The NERDTree
 Plugin 'scrooloose/nerdtree'
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -53,11 +50,11 @@ Plugin 'vim-scripts/indentpython.vim'
 " Plugin 'vim-syntastic/syntastic'
 " Plugin 'nvie/vim-flake8'
 
-" Solarized Theme
-Plugin 'lifepillar/vim-solarized8'
-
 " Iceberg Theme
 Plugin 'cocopon/iceberg.vim'
+
+" Vim Code Dark Theme
+Plugin 'tomasiser/vim-code-dark'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -92,11 +89,6 @@ autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
 " Line numbers
 set number
 
-" Color settings
-set termguicolors
-set term=xterm-256color
-colorscheme iceberg
-
 " Split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -106,6 +98,9 @@ nnoremap <C-H> <C-W><C-H>
 " Split below and vsplit right
 set splitright
 set splitbelow
+
+" Vim Theme
+colorscheme codedark
 
 " MacVim Settings
 if has("gui_running")
